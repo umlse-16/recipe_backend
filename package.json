@@ -1,0 +1,20 @@
+{
+  "name": "recipe_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "app": "cd app && node app.js",
+    "installSync": "scipts/installSync.sh"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "commander": "^2.9.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.11",
+    "winston": "^2.2.0",
+    "sync_backend": "umlse-16/sync_backend#master"
+  }
+}
