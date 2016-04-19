@@ -35,3 +35,6 @@ jspm_packages
 
 # logs folder
 logs/*
+
+# don't commit web pages as part of this repository
+app/public_html/*
