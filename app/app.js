@@ -53,22 +53,23 @@ var sync = new SyncApi({
   logger: logger,
   express: app,
   ns: '/sync', // html namespace of the sync api,
-  get: function(id) {
+  get: function(id, cb) {
     // db get
+    return model;
   },
-  create: function(model) { // doesn't have  $id field
+  create: function(model, cb) { // doesn't have  $id field
     // db create 
     // must return object with $id populated
     // if not populated assumed to have failed
     return model;
   },
-  update: function(model) { 
+  update: function(model, cb) { 
     // better have a $id field or you're having a bad day
     // db update
     // return falsy for failure
     return undefined;
   },
-  del: function(id) {
+  del: function(id, cb) {
     // db delete 
     return false;
   }
